@@ -1,5 +1,5 @@
 const initialState = {
-  missionDataValue: [1, 2, 3, 4, 5, 6],
+  missionDataValue: [],
   error: "",
 };
 
