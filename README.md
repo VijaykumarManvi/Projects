@@ -8,4 +8,4 @@ Install dependencies with npm install
 
 Create a build with npm run build
 
-Enter node server/index.js to launch an application
+Run node server/index.js to launch SpaceX application
