@@ -1,0 +1,155 @@
+/* Tablet View from 700 to 1024px */
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .main-container {
+    margin: 0 2%;
+  }
+  .main-container h4 {
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+  .filter-container h5 {
+    font-size: 2vw;
+    padding: 1% 2%;
+  }
+  .mission-container {
+    width: auto;
+  }
+  .launch-year {
+    font-size: 1.5vw;
+    margin: 0 18% 2% 18%;
+    font-weight: 500;
+  }
+  button {
+    height: 1.7em;
+    line-height: 1.7em;
+    width: 40%;
+    border-radius: 8%;
+    margin-bottom: 0.7vh;
+    font-size: 1.2vw;
+  }
+
+  .filter-container {
+    width: 30%;
+    float: left;
+    border-radius: 3px;
+    border-radius: 1%;
+    margin-right: 15px;
+  }
+  .mission-container {
+    width: 67%;
+    float: left;
+    padding-left: 10px;
+  }
+  .missions {
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 15px 10px 0;
+    width: 46%;
+    margin-right: 15px;
+  }
+  img {
+    width: 190px;
+  }
+}
+
+/* Desktop View from 1024 to 1440px*/
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main-container {
+    margin: 0 2%;
+  }
+  .main-container h4 {
+    font-size: 2vw;
+  }
+  .filter-container h5 {
+    font-size: 1.7vw;
+    padding: 2% 2%;
+  }
+  .launch-year {
+    font-size: 1.1vw;
+    margin: 0 15% 5% 15%;
+    font-weight: 500;
+  }
+  button {
+    height: 1.6em;
+    line-height: 1.6em;
+    width: 50%;
+    border-radius: 8%;
+    margin-bottom: 1vh;
+    font-size: 0.9vw;
+  }
+  .filter-container {
+    width: 20%;
+    float: left;
+    border-radius: 3px;
+    border-radius: 1%;
+    margin-right: 15px;
+  }
+  .mission-container {
+    width: 78%;
+    float: left;
+    padding-left: 10px;
+  }
+  .missions {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 15px 10px 0;
+    width: 23%;
+    margin-right: 15px;
+    font-size: 12px;
+  }
+  img {
+    width: 160px;
+  }
+}
+
+/* Desktop View Beyond 1440px */
+@media only screen and (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .main-container h4 {
+    font-size: 2vw;
+  }
+  .filter-container h5 {
+    font-size: 1.7vw;
+    padding: 2% 2%;
+  }
+  .launch-year {
+    font-size: 1.1vw;
+    margin: 0 15% 5% 15%;
+    font-weight: 500;
+  }
+  button {
+    height: 1.6em;
+    line-height: 1.6em;
+    width: 50%;
+    border-radius: 8%;
+    margin-bottom: 1vh;
+    font-size: 0.9vw;
+  }
+  .filter-container {
+    width: 20%;
+    float: left;
+    border-radius: 3px;
+    border-radius: 1%;
+    margin-right: 15px;
+  }
+  .mission-container {
+    width: 78%;
+    float: left;
+    padding-left: 10px;
+  }
+  .missions {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 15px 10px 0;
+    width: 23%;
+    margin-right: 15px;
+    font-size: 12px;
+  }
+  img {
+    width: 160px;
+  }
+}
