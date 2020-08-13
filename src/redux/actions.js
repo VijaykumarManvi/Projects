@@ -22,9 +22,6 @@ export const fetchMissionsData = () => {
       .get("https://api.spaceXdata.com/v3/launches?limit=100")
       .then((response) => {
         const missionData = response.data;
-        // const missionData = response.data.map(
-        //   (mission) => mission.mission_name
-        // );
         dispatch(fetchMissionDataSuccess(missionData));
       })
       .catch((error) => {
