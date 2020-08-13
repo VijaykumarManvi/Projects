@@ -9,22 +9,7 @@ let initialData = [];
 const evenYears = [2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020];
 const oddYears = [2007, 2009, 2011, 2013, 2015, 2017, 2019];
 
-// To fetch the initial Data
-// const getInitialData = (callback) => {
-//   console.log("ENTER : In getInitialData function");
-//   return axios
-//     .get("https://api.spaceXdata.com/v3/launches?limit=100")
-//     .then(function (response) {
-//       console.log("SUCCESS: getInitialData: ");
-//       initialData = response.data;
-//       callback(initialData);
-//     })
-//     .catch((ex) => {
-//       console.log("ERROR: getInitialData: " + ex);
-//     });
-// };
-
-// To fetch yearwise mission detais of successful launch and landing
+// To fetch yearwise mission detais for successful launch and landing
 const getYearWiseData = (year, callback, launch_value, landing_value) => {
   console.log("ENTER: getDataYearWise function " + year);
   if (launch_value == "" && landing_value == "") {
@@ -263,10 +248,6 @@ class Filter extends Component {
 class Missions extends Component {
   constructor(props) {
     super(props);
-    // if (this.props.missionData.details != undefined)
-    //   console.log(
-    //     "missionData is" + JSON.stringify(this.props.missionData.details)
-    //   );
   }
   render() {
     return this.props.missionData.details != undefined ? (
@@ -335,16 +316,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("component did mounted");
-    // store.dispatch(fetchMissionsData());
+    console.log("component has mounted");
     initialData = this.props.missionDataValue;
-    console.log("componentDidMount lenght is " + initialData.length);
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(
-      " componentDidUpdate lenght iss " + this.props.missionDataValue.length
-    );
     if (prevProps.missionDataValue != this.props.missionDataValue) {
       initialData = this.props.missionDataValue;
       this.setState({
@@ -354,7 +330,6 @@ class App extends Component {
     }
   }
   render() {
-    console.log("Rendered");
     return (
       <div className="main-container">
         <div>
